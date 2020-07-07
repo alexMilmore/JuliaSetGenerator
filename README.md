@@ -1,2 +1,2 @@
 # JuliaSetGenerator
-Simple python program that randomly generates julia sets and displays them. Fairly crude and slow, this really should be done with the gpu
+Simple python program that randomly generates julia sets and displays them. Is slow because it has no GUP parallelisation. Runs in python3.
