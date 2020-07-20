@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  julia:
+    container_name: juliaSetGen
+    build: .
+    environment:
+      DISPLAY: $DISPLAY
+    user: 1000:1000
+    volumes:
+      - /tmp/.X11-unix:/tmp/.X11-unix
+    stdin_open: true # docker run -i
+    tty: true        # docker run -t
